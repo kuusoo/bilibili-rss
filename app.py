@@ -124,12 +124,13 @@ def pin(T, TS, LS, LB, IS, IB,SJ,n):
     return A+B+C
 
 
-with open('rss.txt', 'r', encoding='utf-8') as f:
-    rss = f.read()
-    rss = rss.split("\n")
-    f.close()
+
 
 def app():
+    with open('rss.txt', 'r', encoding='utf-8') as f:
+        rss = f.read()
+        rss = rss.split("\n")
+        f.close()
     订阅地址 = []
     
     for x in rss:
@@ -160,8 +161,8 @@ def app():
                 print(订阅xml)
                 print("完成")
                 print("\n")
-                print("反反爬等待60秒")
-                time.sleep(60)
+                print("反反爬等待30秒")
+                time.sleep(30)
 
     for x in 订阅地址:
         print("订阅地址")
