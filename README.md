@@ -11,4 +11,4 @@ run.bat启动
 
 运行后，会有两个终端弹出，自己找个终端管理器管理吧，或者直接win+tab放到虚拟桌面里当后台
 
-可以试试这玩意应该可以在Linux上跑，run.bat只是调用app.py和web.py
+可以试试这玩意应该可以在Linux上跑，run.bat只是转到当前目录调用app.py和web.py
